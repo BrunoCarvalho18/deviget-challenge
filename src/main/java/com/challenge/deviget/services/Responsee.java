@@ -25,5 +25,13 @@ public class Responsee {
 		return responsee.statusCode();
 
 	}
+	
+	public String saveObjectsBody(String caminho) {
+		return responsee.jsonPath().get(caminho).toString();
+	}
+	
+	
+	
+
 
 }
